@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Amenities Module for HBNB project """
+""" The Amenities Module of HBNB """
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, String
 from sqlalchemy.orm import relationship
@@ -7,7 +7,7 @@ import os
 
 
 class Amenity(BaseModel, Base):
-    """ Amenties Class """
+    """ Defines the Amenties Class """
     if os.environ.get('HBNB_TYPE_STORAGE') == 'db':
         __tablename__ = 'amenities'
 
